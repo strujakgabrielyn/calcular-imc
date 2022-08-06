@@ -10,29 +10,34 @@
     <link rel="shortcut icon" href="balança.jpg" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Calcule seu IMC</h1>
-    </header>
+    <main>
+        <header>
+            <h1>Calcule seu IMC</h1>
+        </header>
+        
+        <section>
+            <div class="nome">
+                <label for="nome">Nome:</label>
+                <input type="text" name="name" id="nome">
+            <div class="peso">
+                <label for="peso">Peso:</label>
+                <input type="number" name="peso" id="peso">
+            </div>
+            <div class="altura">
+                <label for="altura">Altura:</label>
+                <input type="number" name="altura" id="altura">
+            </div>
+            <div>
+                <input type="button" value="Calcular" id="button" onclick="calcularImc()">
+            </div>
+                
+            <div class="resultado">
+                <p>Resultado: </p>
+            </div>
+
+        </section>
+    </main>
     
-    <section>
-        <div class="dados">
-            <label for="nome">Nome:</label>
-            <input type="text" name="name" id="nome">
-
-            <label for="peso">Peso:</label>
-            <input type="number" name="peso" id="peso">
-
-            <label for="altura">Altura:</label>
-            <input type="number" name="altura" id="altura">
-
-            <input type="button" value="Calcular" id="button" onclick="calcularImc()">
-        </div>
-
-        <div class="resultado">
-            <p>Resultado: </p>
-        </div>
-
-    </section>
 
     
 </body>
